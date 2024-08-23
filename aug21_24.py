@@ -8,8 +8,8 @@ Original file is located at
 """
 
 import pandas as pd
-x=[[4.0],[5.0],[6.0],[7.0],[8.0],[9.0],[10.0]]
-y=[  16, 25 , 36, 49,64,81, 100]
+x=[[4.0],[5.0],[6.0],[7.0],[8.0],[9.0],[10.0], [11.0]
+y=[  16, 25 , 36, 49,64,81, 100, 121]
 # Step 2 - Fitting Linear Regression
 from sklearn.linear_model import LinearRegression
 lin_reg = LinearRegression()
@@ -25,7 +25,7 @@ polynomial_regression = make_pipeline(
     LinearRegression(),
 )
 polynomial_regression.fit(x,y)
-X_height=[[20.0]]
+X_height=[[25.0]]
 target_predicted = polynomial_regression.predict(X_height)
 print(target_predicted)
 
