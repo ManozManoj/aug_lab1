@@ -25,8 +25,9 @@ polynomial_regression = make_pipeline(
     LinearRegression(),
 )
 polynomial_regression.fit(x,y)
-X_height=[[25.0]]
-target_predicted = polynomial_regression.predict(X_height)
+z = input()
+# X_height=[[25.0]]
+target_predicted = polynomial_regression.predict(z)
 print(target_predicted)
 
 #import modules
